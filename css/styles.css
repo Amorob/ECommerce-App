@@ -103,8 +103,18 @@ hr {
   padding: 5px 0;
 }
 .main .middle-side {
-  background-color: gray;
+  background-color: #eeeeee;
 }
 .main .middle-side img {
   width: 100%;
+}
+.main .right {
+  line-height: 1.5rem;
+}
+.product-features {
+  background-color: #eeeeee;
+  padding: 30px 60px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
 }
