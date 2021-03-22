@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>E-Commerce App</title>
   </head>
@@ -25,8 +26,12 @@
             <ul class="flex">
               <li><a href="#">Find a Store</a></li>
               <li><a href="#">Contact</a></li>
-              <li><input type="email" placeholder="Email Address" /></li>
-              <li><button>Join</button></li>
+              <form action="#">
+                <input type="email" placeholder="Email Address" />
+                <button>Join</button>
+              </form>
+              <!-- <li><input type="email" placeholder="Email Address" /></li>
+              <li><button>Join</button></li> -->
             </ul>
             <a href="#">Make an Appointment</a>
           </div>
@@ -57,13 +62,17 @@
             <li><a href="#">Our History</a></li>
           </ul>
           <form action="#" class="serach">
-            <input type="text" name="search" id="search" />
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search ..."
+            />
             <i class="fa fa-search"></i>
           </form>
         </div>
       </nav>
     </header>
-    <hr />
     <script src="js/main.js"></script>
   </body>
 </html>
