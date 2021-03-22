@@ -92,3 +92,19 @@ hr {
   background-color: #0d98ba;
   color: #ffffff;
 }
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Main Section Classes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 7fr 6fr;
+  gap: 20px;
+  padding: 30px 60px;
+}
+.main .left-side img {
+  padding: 5px 0;
+}
+.main .middle-side {
+  background-color: gray;
+}
+.main .middle-side img {
+  width: 100%;
+}
