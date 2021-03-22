@@ -1,0 +1,39 @@
+<div class="navbar-top flex-1">
+          <div class="navbar-top-1 flex-1">
+            <a href="#">Find a Store</a>
+            <a href="#">Contact</a>
+            <form action="">
+              <input type="email" name="email" id="email" />
+              <input type="submit" name="join" id="join" value="Join" />
+            </form>
+          </div>
+          <div class="navbar-top-2">
+            <img src="icons/logo.png" alt="logo" />
+          </div>
+          <div class="navbar-top-3">
+            <a href="#">Welcome</a>
+            <a href="#">Sign In</a>
+            <a href="#">Ship To</a>
+            <a href="#">Bag</a>
+          </div>
+        </div>
+        <div class="navbar middle grid">
+          <a href="#"><span class="text-left"> Make an Appointment</span></a>
+          <a href="#"><span class="text-center"> ECommerce</span></a>
+          <a href="#"><span class="text-right"> United States</span></a>
+        </div>
+        <div class="navbar-menu flex-1">
+          <ul class="flex-1">
+            <li><a href="#">New</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Girls</a></li>
+            <li><a href="#">More Sizes</a></li>
+            <li><a href="#">Ties</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Our History</a></li>
+          </ul>
+          <form action="#">
+            <input type="text" name="search" id="search" />
+          </form>
+        </div>

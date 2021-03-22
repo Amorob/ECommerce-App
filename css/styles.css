@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  color: #262626;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Utility Classes */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+}
+hr {
+  border: 0.1px solid #c2d9f3;
+  height: 1px;
+}
+/* ################## Universal Classess ############################ */
+/* Container class */
+.container {
+  width: 90%;
+  margin: auto;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Display Classes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.flex {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.flex-1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.flex-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* Header */
+
+/* Deals Styles */
+.deals {
+  background-color: #10005f;
+  color: #eeeeee;
+  min-height: 30px;
+  padding: 0.5rem;
+  text-align: center;
+}
+/* Navbar */
+.navbar {
+  padding: 30px 60px;
+}
+.navbar a {
+  color: #262626;
+}
+.navbar input {
+  padding: 5px;
+  width: 120px;
+}
+.navbar button {
+  padding: 5px;
+  background-color: blue;
+}
+.navbar img {
+  width: 200px;
+}
+.menu-top a:hover {
+  text-decoration: underline;
+}
