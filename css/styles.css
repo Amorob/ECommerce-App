@@ -269,7 +269,68 @@ p.delivery {
   margin: 10px 0;
   padding: 10px 0;
 }
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Checkout Page >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+.checkout-main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 50px;
+  padding: 30px 60px;
+}
+.checkout-bag {
+  display: flex;
+  justify-content: space-between;
+  margin: 20 0px;
+  padding: 10 0px;
+}
+.checkout-items {
+  display: flex;
+  flex-direction: column;
+  margin: 20 0px;
+  padding: 10 0px;
+}
+.order-summary {
+  border: 1px solid gray;
+}
+.order-summary h2 {
+  background-color: indigo;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid gray;
+}
+.order-summary p {
+  display: inline-block;
+  padding: 5px 10px;
+}
+.coupon-code form {
+  padding: 10px;
+}
+.coupon-code input {
+  padding: 10px;
+}
+.coupon-code input[type="submit"] {
+  background-color: indigo;
+  color: #ffffff;
+}
+.checkout {
+  padding: 10px;
+}
+.checkout button {
+  background-color: #990011ff;
+  color: #ffffff;
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+}
+.checkout button a {
+  color: #ffffff;
+}
+.paywith-paypal,
+.paywith-amazon {
+  padding: 10px;
+}
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .footer-main {
