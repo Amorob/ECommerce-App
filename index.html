@@ -13,6 +13,7 @@
     <title>E-Commerce App</title>
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header">
       <section class="deals">
         <p>
@@ -20,7 +21,9 @@
           checkout - Shop Now
         </p>
       </section>
+      <!-- Header Section Nav Navbar -->
       <nav class="navbar">
+        <!-- Navbar Top Menu -->
         <div class="menu-top flex-1">
           <div class="menu-top-1 flex-2">
             <ul class="flex">
@@ -30,8 +33,6 @@
                 <input type="email" placeholder="Email Address" />
                 <button>Join</button>
               </form>
-              <!-- <li><input type="email" placeholder="Email Address" /></li>
-              <li><button>Join</button></li> -->
             </ul>
             <a href="#">Make an Appointment</a>
           </div>
@@ -48,6 +49,7 @@
             </ul>
           </div>
         </div>
+        <!-- Navbar Main Menu -->
         <div class="menu-main flex-1">
           <img src="icons/logo.png" alt="logo" />
           <ul class="flex">
@@ -72,23 +74,31 @@
           </form>
         </div>
       </nav>
+      <!-- End of Navbar -->
     </header>
+    <!-- End of Header -->
+    <!-- Breadcrums -->
     <section class="breadcrumb">
       <p>breadcrumbs goes here</p>
     </section>
+    <!-- End of breadcrums -->
+    <!-- Section Main -->
     <section class="main">
+      <!-- Main section Left side -->
       <div class="left-side">
         <img src="images/shirt-small.jpg" alt="Side Shirt" />
         <img src="images/person.jpg" alt="Side Person" />
         <img src="images/shirt-small2.jpg" alt="Side Shirt 2" />
       </div>
+      <!-- Main section Middle side -->
       <div class="middle-side">
         <img src="images/shirt.jpg" alt="Shirt" />
       </div>
+      <!-- Main section Right side -->
       <div class="right-side">
         <div class="description">
           <h2>Boys' Stillwater Sherpa 1/4-Zip</h2>
-          <p>
+          <p class="star">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -97,19 +107,46 @@
             <a href="#">28 Reviews</a>
           </p>
 
-          <p>FREE GROUND SHIPPING on all orders over $125</p>
-          <p>$48.99</p>
+          <p class="free-shipping">
+            <span class="free-shipping"> Free ground shipping</span> on all
+            orders over $125
+          </p>
+          <p class="price">
+            <span class="price-new"> $48.99 </span>
+            <span class="price-old"> $75.50</span>
+          </p>
         </div>
         <div class="chose-color">
-          <p>Color: Camel</p>
+          <p><span class="color">Color</span> : Camel</p>
           <input type="color" name="choose-color" id="choose-color" />
         </div>
         <div class="size-chart">
-          <p>Size: Select a size</p>
-          <p>Size Chart</p>
+          <p>
+            Size: Select a size <span><a href="#">Size Chart</a></span>
+          </p>
+          <p class="sizes">
+            <span>2T</span>
+            <span>3T</span>
+            <span>4T</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>S</span>
+            <span>M</span>
+            <span>L</span>
+            <span>XL</span>
+          </p>
+        </div>
+        <div class="quantity">
+          <span class="decrease">-</span>
+          <input type="text" />
+          <span class="increase">+</span>
         </div>
       </div>
+      <!-- End of Main - Right side -->
     </section>
+    <!-- End of Main Section -->
+    <!-- Section Product Features -->
     <section class="product-features">
       <div class="left-features">
         <h3>THE DETAILS</h3>

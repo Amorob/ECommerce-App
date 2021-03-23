@@ -111,6 +111,83 @@ hr {
 .main .right {
   line-height: 1.5rem;
 }
+.description h2 {
+  padding-bottom: 10px;
+}
+p.star {
+  padding: 10px;
+}
+p.free-shipping {
+  padding: 10px;
+}
+span.free-shipping {
+  color: #990011ff;
+  text-transform: uppercase;
+}
+p.price {
+  padding: 10px;
+}
+span.price-new {
+  color: #990011ff;
+}
+span.price-old {
+  text-decoration: line-through;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+.chose-color {
+  padding: 10px;
+}
+span.color {
+  font-weight: bold;
+}
+.chose-color input {
+  margin: 5px 0;
+}
+.size-chart {
+  margin-top: 5px;
+  padding: 5px;
+}
+.size-chart a {
+  margin-left: 10px;
+  padding: 0 10px;
+  text-decoration: underline;
+}
+.size-chart p {
+  padding: 5px 0;
+}
+.size-chart .sizes {
+  margin: 5px 0;
+  margin: 5px 0;
+}
+.size-chart .sizes span {
+  display: inline-block;
+  width: 45px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+.quantity {
+  margin: 10px 0;
+  padding: 10px;
+}
+.quantity span {
+  border-radius: 50%;
+  border: 1px solid blue;
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 1.5rem;
+}
+.quantity input {
+  height: 35px;
+  width: 40px;
+  padding: 5px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Product Features */
 .product-features {
   background-color: #eeeeee;
   padding: 30px 60px;
