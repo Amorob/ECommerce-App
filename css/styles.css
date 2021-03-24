@@ -15,6 +15,7 @@ ul {
 a {
   text-decoration: none;
   padding: 10px;
+  color: #262626;
 }
 a:hover {
   cursor: pointer;
@@ -140,6 +141,9 @@ span.price-old {
 .chose-color {
   padding: 10px;
 }
+.chose-color p {
+  font-size: 0.7rem;
+}
 span.color {
   font-weight: bold;
 }
@@ -157,18 +161,28 @@ span.color {
 }
 .size-chart p {
   padding: 5px 0;
+  font-size: 0.7rem;
 }
 .size-chart .sizes {
   margin: 5px 0;
   margin: 5px 0;
+  cursor: pointer;
 }
+
 .size-chart .sizes span {
   display: inline-block;
-  width: 45px;
+  width: 35px;
   margin: 5px;
   padding: 5px;
   text-align: center;
   background-color: #eeeeee;
+}
+.size-chart .sizes span:hover {
+  background-color: #0d98ba;
+  color: #eeeeee;
+}
+.size-chart .sizes span:active {
+  background-color: darkblue;
 }
 .quantity {
   margin: 10px 0;
@@ -234,7 +248,9 @@ p.delivery {
   padding: 30px 60px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 50px;
+  gap: 100px;
+  line-height: 1.5;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Cart Page >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .cart-main {
@@ -330,6 +346,44 @@ p.delivery {
 .paywith-paypal,
 .paywith-amazon {
   padding: 10px;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Added to Cart Page >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.added-to-cart h3 {
+  background-color: #10005f;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+.added-to-cart-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 30px 60px;
+}
+.added-to-cart-main img {
+  width: 100%;
+}
+.additional-item {
+  margin: 10px 0;
+  padding: 10px 0;
+  background-color: #eeeeee;
+  text-align: center;
+  border-top: 1px dotted gray;
+  border-bottom: 1px dotted gray;
+}
+.cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+}
+.success {
+  display: flex;
+  flex-direction: column;
+}
+.btn-success {
+  background-color: green;
+  height: 10px;
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
