@@ -13,69 +13,69 @@
     <title>E-Commerce App</title>
   </head>
   <body>
-   <!-- Header Section -->
-   <header class="header">
-    <section class="deals">
-      <p>
-        We now accept <i class="fa fa-apple"></i> Pay for a quick and easy
-        checkout - Shop Now
-      </p>
-    </section>
-    <!-- Header Section Nav Navbar -->
-    <nav class="navbar">
-      <!-- Navbar Top Menu -->
-      <div class="menu-top flex-1">
-        <div class="menu-top-1 flex-2">
+    <!-- Header Section -->
+    <header class="header">
+      <section class="deals">
+        <p>
+          We now accept <i class="fa fa-apple"></i> Pay for a quick and easy
+          checkout - Shop Now
+        </p>
+      </section>
+      <!-- Header Section Nav Navbar -->
+      <nav class="navbar">
+        <!-- Navbar Top Menu -->
+        <div class="menu-top flex-1">
+          <div class="menu-top-1 flex-2">
+            <ul class="flex">
+              <li><a href="#">Find a Store</a></li>
+              <li><a href="#">Contact</a></li>
+              <form action="#">
+                <input type="email" placeholder="Email Address" />
+                <button>Join</button>
+              </form>
+            </ul>
+            <a href="#">Make an Appointment</a>
+          </div>
+          <div class="menu-top-2">
+            <img src="icons/logo.png" alt="" />
+          </div>
+          <div class="menu-top-3">
+            <ul class="flex-1">
+              <li><a href="#">Welcome, Sign In</a></li>
+              <li><a href="#">Ship To</a></li>
+              <li>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Navbar Main Menu -->
+        <div class="menu-main flex-1">
           <ul class="flex">
-            <li><a href="#">Find a Store</a></li>
-            <li><a href="#">Contact</a></li>
-            <form action="#">
-              <input type="email" placeholder="Email Address" />
-              <button>Join</button>
-            </form>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Boys</a></li>
+            <li><a href="#">Girls</a></li>
+            <li><a href="#">More Sizes</a></li>
+            <li><a href="#">Ties</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Our History</a></li>
           </ul>
-          <a href="#">Make an Appointment</a>
+          <form action="#" class="serach">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search ..."
+            />
+            <i class="fa fa-search"></i>
+          </form>
         </div>
-        <div class="menu-top-2">
-          <img src="icons/logo.png" alt="" />
-        </div>
-        <div class="menu-top-3">
-          <ul class="flex-1">
-            <li><a href="#">Welcome, Sign In</a></li>
-            <li><a href="#">Ship To</a></li>
-            <li>
-              <a href="#"><i class="fa fa-shopping-cart"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- Navbar Main Menu -->
-      <div class="menu-main flex-1">
-        <ul class="flex">
-          <li><a href="#">New</a></li>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">Boys</a></li>
-          <li><a href="#">Girls</a></li>
-          <li><a href="#">More Sizes</a></li>
-          <li><a href="#">Ties</a></li>
-          <li><a href="#">Sale</a></li>
-          <li><a href="#">Our History</a></li>
-        </ul>
-        <form action="#" class="serach">
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search ..."
-          />
-          <i class="fa fa-search"></i>
-        </form>
-      </div>
-    </nav>
-    <!-- End of Navbar -->
-  </header>
-  <!-- End of Header -->
+      </nav>
+      <!-- End of Navbar -->
+    </header>
+    <!-- End of Header -->
 
     <!-- Section Checkout page main begins here -->
     <section class="checkout-main">
@@ -136,13 +136,14 @@
     </section>
 
     <!-- Section Checkout page main ends here -->
+
     <!-- Footer -->
     <footer class="footer">
       <!-- Main Footer -->
       <div class="footer-main">
         <div class="footer-main-left">
           <ul>
-            <li>My Account</li>
+            <li class="text-medium text-bold">My Account</li>
             <li><a href="# ">Order Status </a></li>
             <li><a href="#"> Start Order</a></li>
             <li><a href="#"> Wish List</a></li>
@@ -150,7 +151,7 @@
             <li><a href="#">FAQ's</a></li>
           </ul>
           <ul>
-            <li>Services</li>
+            <li class="text-medium text-bold">Services</li>
             <li><a href="# ">Our Services </a></li>
             <li><a href="#"> Gift Cards</a></li>
             <li><a href="#"> Size Charts</a></li>
@@ -159,14 +160,14 @@
             <li><a href="#">Corporate Gifts</a></li>
           </ul>
           <ul>
-            <li>About Us</li>
+            <li class="text-medium text-bold">About Us</li>
             <li><a href="# ">Our Story </a></li>
             <li><a href="#"> Our Stores</a></li>
             <li><a href="#"> Other Retailers</a></li>
             <li><a href="#">Careers </a></li>
           </ul>
           <ul>
-            <li>Our Community</li>
+            <li class="text-medium text-bold">Our Community</li>
             <li><a href="# ">Refer a Friend </a></li>
             <li><a href="#"> Discount</a></li>
             <li><a href="#"> Whales for a Cause</a></li>
@@ -202,6 +203,13 @@
         <a href="#">Site Map</a>
       </div>
     </footer>
+    <!-- JavaScript Link -->
     <script src="js/main.js"></script>
+    <!-- JQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

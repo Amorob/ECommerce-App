@@ -37,10 +37,14 @@ hr {
   font-weight: bold;
   padding: 10px 0;
 }
+.text-center {
+  text-align: center;
+}
 .text-name {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: bold;
+  color: #10005f;
 }
 .text-cancel {
   text-decoration: line-through;
@@ -225,11 +229,13 @@ span.color {
   margin: 10px 0;
   padding: 10px;
 }
-.quantity span {
+.quantity button {
   border-radius: 50%;
+  outline: none;
+  border: none;
   border: 1px solid blue;
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 6px;
   font-size: 1.5rem;
 }
 .quantity input {
@@ -237,6 +243,7 @@ span.color {
   width: 40px;
   padding: 5px;
   margin: 0 10px;
+  border-radius: 5px;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -462,6 +469,16 @@ a.checkout {
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.footer {
+  line-height: 1.5;
+}
+.footer a {
+  padding: 10px 0;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #0d98ba;
+}
 
 .footer-main {
   display: grid;

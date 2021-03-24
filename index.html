@@ -92,19 +92,19 @@
       <!-- Main section Right side -->
       <div class="right-side">
         <div class="description">
-          <h2>Boys' Stillwater Sherpa 1/4-Zip</h2>
+          <h2 class="text-name">Boys' Stillwater Sherpa 1/4-Zip</h2>
           <p class="star">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
-            <a href="#">28 Reviews</a>
+            <a href="#"> <span class="text-small"> 28 Reviews</span></a>
           </p>
 
           <p class="free-shipping">
-            <span class="free-shipping"> Free ground shipping</span> on all
-            orders over $125
+            <span class="free-shipping"> Free ground shipping</span>
+            <span class="text-small"> on all orders over $125</span>
           </p>
           <!-- Prices -->
           <p class="price">
@@ -120,26 +120,28 @@
         <!-- Size Chart -->
         <div class="size-chart">
           <p>
-            Size: Select a size <span><a href="#">Size Chart</a></span>
+            <span class="text-bold"> Size:</span>
+            <span id="select-size">Select a size</span>
+            <span><a href="#">Size Chart</a></span>
           </p>
           <p class="sizes">
-            <span>2T</span>
-            <span>3T</span>
-            <span>4T</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-            <span>S</span>
-            <span>M</span>
-            <span>L</span>
-            <span>XL</span>
+            <span id="size" onclick="selectSize()"> 2T</span>
+            <span id="size" onclick="selectSize()"> 3T</span>
+            <span id="sizet" onclick="selectSize()"> 4T</span>
+            <span id="size" onclick="selectSize()"> 5</span>
+            <span id="size" onclick="selectSize()"> 6</span>
+            <span id="size" onclick="selectSize()"> 7</span>
+            <span id="size" onclick="selectSize()"> S</span>
+            <span id="size" onclick="selectSize()"> M</span>
+            <span id="size" onclick="selectSize()"> L</span>
+            <span id="size" onclick="selectSize()"> XL</span>
           </p>
         </div>
         <!-- Quantity -->
         <div class="quantity">
-          <span class="decrease">-</span>
-          <input type="text" />
-          <span class="increase">+</span>
+          <button id="decrease" onclick="decreaseQuantity()">-</button>
+          <input type="text" id="quantity" />
+          <button id="increase" onclick="increaseQuantity() ">+</button>
         </div>
         <!-- Add to Cart -->
         <a href="#" class="add-to-cart"> Add to Cart </a>
@@ -205,7 +207,7 @@
       <div class="footer-main">
         <div class="footer-main-left">
           <ul>
-            <li>My Account</li>
+            <li class="text-medium text-bold">My Account</li>
             <li><a href="# ">Order Status </a></li>
             <li><a href="#"> Start Order</a></li>
             <li><a href="#"> Wish List</a></li>
@@ -213,7 +215,7 @@
             <li><a href="#">FAQ's</a></li>
           </ul>
           <ul>
-            <li>Services</li>
+            <li class="text-medium text-bold">Services</li>
             <li><a href="# ">Our Services </a></li>
             <li><a href="#"> Gift Cards</a></li>
             <li><a href="#"> Size Charts</a></li>
@@ -222,14 +224,14 @@
             <li><a href="#">Corporate Gifts</a></li>
           </ul>
           <ul>
-            <li>About Us</li>
+            <li class="text-medium text-bold">About Us</li>
             <li><a href="# ">Our Story </a></li>
             <li><a href="#"> Our Stores</a></li>
             <li><a href="#"> Other Retailers</a></li>
             <li><a href="#">Careers </a></li>
           </ul>
           <ul>
-            <li>Our Community</li>
+            <li class="text-medium text-bold">Our Community</li>
             <li><a href="# ">Refer a Friend </a></li>
             <li><a href="#"> Discount</a></li>
             <li><a href="#"> Whales for a Cause</a></li>
@@ -265,6 +267,13 @@
         <a href="#">Site Map</a>
       </div>
     </footer>
+    <!-- JavaScript Link -->
     <script src="js/main.js"></script>
+    <!-- JQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
