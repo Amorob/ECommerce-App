@@ -13,33 +13,47 @@
     <title>E-Commerce App</title>
   </head>
   <body>
-    <section class="added-to-cart">
-      <h3>Item Added to Cart</h3>
-    </section>
-    <section class="added-to-cart-main">
-      <div class="product-image">
-        <img src="images/shirt4.jpg" alt="shirt" />
-      </div>
-      <div class="product-description">
-        <p>Boys' Stillwater Sherpa 1/4-Zip</p>
-        <p>$48.99 $98.50</p>
-        <p>Camel / 4T</p>
-        <p>Qty: 1</p>
-        <p>$48.99</p>
-      </div>
-    </section>
-    <section class="additional-item">
-      <p>1 Additional Items In Cart</p>
-    </section>
-    <hr />
-    <sectio class="cart-subtotal">
-      <p>Cart Subtotal:</p>
-      <p>$146.98</p>
-    </sectio>
-    <section class="success">
-      <div class="btn-success"></div>
-      <p>You qualify for FREE SHIPPING!</p>
-    </section>
+    <div class="container-small">
+      <section class="added-to-cart">
+        <h3><span>Item Added to Cart</span> <a>X </a></h3>
+      </section>
+      <section class="added-to-cart-main">
+        <div class="product-image">
+          <img src="images/shirt4.jpg" alt="shirt" />
+        </div>
+        <div class="product-description">
+          <p class="text-name">Boys' Stillwater Sherpa 1/4-Zip</p>
+          <p>
+            <span class="text-price">$48.99</span>
+            <span class="text-cancel">$98.50</span>
+          </p>
+          <p>Camel / 4T</p>
+          <p>Qty: 1</p>
+          <p>$48.99</p>
+        </div>
+      </section>
+      <section class="additional-item">
+        <p>1 Additional Items In Cart</p>
+        <a href="#">+</a>
+      </section>
+
+      <sectio class="cart-subtotal">
+        <p class="text-total-price text-medium">Cart Subtotal:</p>
+        <p class="text-total-price text-medium">$146.98</p>
+      </sectio>
+      <hr />
+      <section class="success">
+        <div class="btn-success"></div>
+        <p class="text-small text-bold">You qualify for FREE SHIPPING!</p>
+      </section>
+      <section class="added-to-cart">
+        <a href="#" class="checkout"> Check Out</a>
+      </section>
+      <section class="continue-shopping">
+        <a href="#">Continue Shopping</a>
+      </section>
+    </div>
+
     <script src="js/main.js"></script>
   </body>
 </html>

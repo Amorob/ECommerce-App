@@ -24,11 +24,48 @@ hr {
   border: 0.1px solid #c2d9f3;
   height: 1px;
 }
+.text-small {
+  font-size: 0.7rem;
+}
+.text-normal {
+  font-size: 1rem;
+}
+.text-medium {
+  font-size: 1.4rem;
+}
+.text-bold {
+  font-weight: bold;
+  padding: 10px 0;
+}
+.text-name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.text-cancel {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+.text-price {
+  color: #990011ff;
+}
+.text-total-price {
+  font-weight: bold;
+}
 /* ################## Universal Classess ############################ */
 /* Container class */
 .container {
   width: 90%;
   margin: auto;
+}
+.container-small {
+  width: 480px;
+  height: 100vh;
+  padding: 0px 20px;
+}
+/* Wrapper Class */
+.wrapper {
+  padding: 30px 60px;
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Display Classes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .flex {
@@ -352,30 +389,49 @@ p.delivery {
 .added-to-cart h3 {
   background-color: #10005f;
   color: #ffffff;
-  padding: 20px;
-  text-align: center;
+  padding: 20px 20px 20px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.added-to-cart h3 a {
+  color: #eeeeee;
+  padding: 0;
 }
 .added-to-cart-main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  padding: 30px 60px;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin: 10px 0;
+  padding: 20px;
 }
 .added-to-cart-main img {
   width: 100%;
 }
+.product-description {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
 .additional-item {
   margin: 10px 0;
-  padding: 10px 0;
+  margin: 10px 0;
+  padding: 20px 10px;
   background-color: #eeeeee;
   text-align: center;
   border-top: 1px dotted gray;
   border-bottom: 1px dotted gray;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.additional-item a {
+  padding: 0;
 }
 .cart-subtotal {
   display: flex;
   justify-content: space-between;
-  padding: 10px 60px;
+  margin: 10px 0;
+  padding: 10px;
 }
 .success {
   display: flex;
@@ -384,7 +440,27 @@ p.delivery {
 .btn-success {
   background-color: green;
   height: 10px;
+  margin: 5px 0;
+  padding: 5px 0;
 }
+a.checkout {
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: #10005f;
+  color: #ffffff;
+  margin: 10px 0;
+  padding: 20px;
+  text-align: center;
+}
+.continue-shopping {
+  margin: 10px 0;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid gray;
+  text-transform: uppercase;
+}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .footer-main {
