@@ -140,11 +140,11 @@
         <!-- Quantity -->
         <div class="quantity">
           <button id="decrease" onclick="decreaseQuantity()">-</button>
-          <input type="text" id="quantity" />
+          <input type="text" id="quantity" placeholder="qty" />
           <button id="increase" onclick="increaseQuantity() ">+</button>
         </div>
         <!-- Add to Cart -->
-        <a href="#" class="add-to-cart"> Add to Cart </a>
+        <button class="add-to-cart" onclick="showCart()">Add to Cart</button>
         <a href="#" class="buy-online">
           <span>Buy online, free in-store pickup</span>
           <span>Get it today at a store near you</span>
@@ -200,6 +200,55 @@
         </div>
       </div>
     </section>
+
+    <!-- Add to cart -->
+    <div class="addtocart cart-hide">
+      <div class="container-small">
+        <section class="added-to-cart">
+          <h3>
+            <span>Item Added to Cart</span>
+            <i class="fa fa-close" onclick="closeCart()"></i>
+            <!-- <button onclick="closeCart()"><i class="fa fa-close"></i></button> -->
+          </h3>
+        </section>
+        <section class="added-to-cart-main">
+          <div class="product-image">
+            <img src="images/shirt4.jpg" alt="shirt" />
+          </div>
+          <div class="product-description">
+            <p class="text-name">Boys' Stillwater Sherpa 1/4-Zip</p>
+            <p>
+              <span class="text-price">$48.99</span>
+              <span class="text-cancel">$98.50</span>
+            </p>
+            <p>Camel / 4T</p>
+            <p>Qty: <span id="qty">1</span></p>
+            <p id="tprice">$48.99</p>
+          </div>
+        </section>
+        <section class="additional-item">
+          <p>1 Additional Items In Cart</p>
+          <a href="#">+</a>
+        </section>
+
+        <sectio class="cart-subtotal">
+          <p class="text-total-price text-medium">Cart Subtotal:</p>
+          <p class="text-total-price text-medium">$146.98</p>
+        </sectio>
+        <hr />
+        <section class="success">
+          <div class="btn-success"></div>
+          <p class="text-small text-bold">You qualify for FREE SHIPPING!</p>
+        </section>
+        <section class="added-to-cart">
+          <a href="cart.html" class="checkout"> Check Out</a>
+        </section>
+        <section class="continue-shopping">
+          <a href="#">Continue Shopping</a>
+        </section>
+      </div>
+    </div>
+    <!-- Add to Cart ends here -->
 
     <!-- Footer -->
     <footer class="footer">

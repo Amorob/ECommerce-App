@@ -22,3 +22,23 @@ function increaseQuantity() {
   quantity++;
   document.getElementById("quantity").value = quantity;
 }
+
+// Add cart popup functionality
+function showCart() {
+  if ($(".addtocart").hasClass("cart-hide")) {
+    $(".addtocart").removeClass("cart-hiide");
+    $(".addtocart").addClass("cart-show");
+  } else if ($(".addtocart").hasClass("cart-show")) {
+    $(".addtocart").removeClass("cart-show");
+    $(".addtocart").addClass("cart-hide");
+  }
+}
+
+// Close cart popup functionality
+function closeCart() {
+  $(".addtocart").removeClass("cart-show");
+}
+
+let uprice = document.getElementById("uprice").innerHTML.value;
+let qty = document.getElementById("qty").innerHTML.value;
+let tprice = document.getElementById("tprice").innerHTML.value;
