@@ -72,7 +72,7 @@ function calculateTotalPrice() {
   let price = originalPrice.innerText;
   totalPrice.innerHTML = Number(qty) * parseFloat(price);
 }
-
+//  calculateCartSubTotal function
 function calculateCartSubTotal() {
   cartSubtotalPrice.innerHTML = quantity.value * originalPrice.innerText;
 }
