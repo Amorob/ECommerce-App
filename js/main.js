@@ -32,6 +32,10 @@ function showCart() {
     $(".addtocart").removeClass("cart-show");
     $(".addtocart").addClass("cart-hide");
   }
+  // Function calls
+  updatePrice();
+  updateQuantity();
+  calculateTotalPrice();
 }
 
 // Close cart popup functionality
@@ -39,6 +43,36 @@ function closeCart() {
   $(".addtocart").removeClass("cart-show");
 }
 
-let uprice = document.getElementById("uprice").innerHTML.value;
-let qty = document.getElementById("qty").innerHTML.value;
-let tprice = document.getElementById("tprice").innerHTML.value;
+// Variables declaration
+let originalPrice = document.getElementById("original-price");
+let newPrice = document.getElementById("new-price");
+let quantity = document.getElementById("quantity");
+let qty = document.getElementById("qty");
+let totalPrice = document.getElementById("total-price");
+
+// Price update function
+function updatePrice() {
+  newPrice.innerHTML = originalPrice.innerHTML;
+  newPrice = newPrice.innerHTML;
+  return newPrice;
+}
+
+// Quantity update function
+function updateQuantity() {
+  qty.innerHTML = quantity.value;
+  qty = qty.innerHTML;
+  return qty;
+}
+
+// Calculate total price function
+function calculateTotalPrice() {
+  totalPrice.innerHTML = Number("newPrice") * Number("qty");
+  totalPrice = totalPrice.innerHTML;
+  return Number("totalPrice");
+  // totalPrice.innerHTML = Number("newPrice.innerHTML") * Number("qty.innerHTML");
+  // return Number("totalPrice.innerHTML");
+
+  // totalPrice = "newPrice.innerHTML" * "qty.innerHTML";
+  // totalPrice.innerHTML = totalPrice;
+  // return totalPrice.innerHTML;
+}
