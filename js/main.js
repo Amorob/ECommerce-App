@@ -36,6 +36,7 @@ function showCart() {
   updatePrice();
   updateQuantity();
   calculateTotalPrice();
+  calculateCartSubTotal();
 }
 
 // Close cart popup functionality
@@ -49,6 +50,7 @@ let newPrice = document.getElementById("new-price");
 let quantity = document.getElementById("quantity");
 let qty = document.getElementById("qty");
 let totalPrice = document.getElementById("total-price");
+let cartSubtotalPrice = document.getElementById("cart-subtotal-price");
 
 // Price update function
 function updatePrice() {
@@ -66,9 +68,11 @@ function updateQuantity() {
 
 // Calculate total price function
 function calculateTotalPrice() {
-  let qtyUpdateQuantity = updateQuantity();
-  let newPriceUpdatePrice = updatePrice();
-  // totalPrice = qtyUpdateQuantity * newPriceUpdatePrice;
+  let qty = quantity.value;
+  let price = originalPrice.innerText;
+  totalPrice.innerHTML = Number(qty) * parseFloat(price);
+}
 
-  totalPrice.innerHTML = qtyUpdateQuantity * newPriceUpdatePrice;
+function calculateCartSubTotal() {
+  cartSubtotalPrice.innerHTML = quantity.value * originalPrice.innerText;
 }
