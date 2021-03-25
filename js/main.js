@@ -66,13 +66,9 @@ function updateQuantity() {
 
 // Calculate total price function
 function calculateTotalPrice() {
-  totalPrice.innerHTML = Number("newPrice") * Number("qty");
-  totalPrice = totalPrice.innerHTML;
-  return Number("totalPrice");
-  // totalPrice.innerHTML = Number("newPrice.innerHTML") * Number("qty.innerHTML");
-  // return Number("totalPrice.innerHTML");
+  let qtyUpdateQuantity = updateQuantity();
+  let newPriceUpdatePrice = updatePrice();
+  // totalPrice = qtyUpdateQuantity * newPriceUpdatePrice;
 
-  // totalPrice = "newPrice.innerHTML" * "qty.innerHTML";
-  // totalPrice.innerHTML = totalPrice;
-  // return totalPrice.innerHTML;
+  totalPrice.innerHTML = qtyUpdateQuantity * newPriceUpdatePrice;
 }
