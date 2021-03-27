@@ -192,6 +192,7 @@ span.color {
 .chose-color input {
   margin: 5px 0;
 }
+
 .size-chart {
   margin-top: 5px;
   padding: 5px;
@@ -217,18 +218,19 @@ span.color {
   margin: 5px;
   padding: 5px;
   text-align: center;
+}
+.size {
   background-color: #eeeeee;
 }
 .size-chart .sizes span:hover {
   background-color: #0d98ba;
   color: #eeeeee;
 }
-.size-chart .sizes span:active {
-  background-color: darkblue;
-}
-/* SIze slected ID */
+
+/* Size slected ID */
 .size-selected {
   background-color: darkblue;
+  color: white;
 }
 .quantity {
   margin: 10px 60px;

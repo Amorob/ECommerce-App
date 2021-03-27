@@ -1,10 +1,3 @@
-let children = document.getElementsByClassName("sizes").children;
-for (i = 0; i < children.length; i++)
-  $(document).ready(function () {
-    $("size"[i]).click(function () {
-      $(".size"[i]).addClass("size-selected");
-    });
-  });
 
 // Decrease Quantity function
 function decreaseQuantity() {
@@ -75,3 +68,11 @@ function calculateTotalPrice() {
 function calculateCartSubTotal() {
   cartSubtotalPrice.innerHTML = quantity.value * originalPrice.innerText;
 }
+
+$(".size").click(function () {
+  
+  $(".size").each(function () {
+    $(this).removeClass("size-selected");
+  });
+  $(this).addClass("size-selected");
+});
