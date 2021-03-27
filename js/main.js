@@ -1,11 +1,10 @@
-// Select a size function
-function selectSize() {
-  let select_size = document.getElementById("select-size");
-  let size = document.getElementById("size");
-  select_size.innerHTML = size.innerHTML;
-  size.style.backgroundColor = "#10005f";
-  size.style.color = "#ffffff";
-}
+let children = document.getElementsByClassName("sizes").children;
+for (i = 0; i < children.length; i++)
+  $(document).ready(function () {
+    $("size"[i]).click(function () {
+      $(".size"[i]).addClass("size-selected");
+    });
+  });
 
 // Decrease Quantity function
 function decreaseQuantity() {

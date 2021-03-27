@@ -226,6 +226,10 @@ span.color {
 .size-chart .sizes span:active {
   background-color: darkblue;
 }
+/* SIze slected ID */
+.size-selected {
+  background-color: darkblue;
+}
 .quantity {
   margin: 10px 60px;
   padding: 20px;
