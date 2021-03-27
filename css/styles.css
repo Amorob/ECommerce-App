@@ -231,6 +231,8 @@ span.color {
 .size-selected {
   background-color: darkblue;
   color: white;
+  border-radius: 8px;
+  font-weight: bold;
 }
 .quantity {
   margin: 10px 60px;

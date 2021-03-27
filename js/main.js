@@ -1,3 +1,14 @@
+// T-Shirt size selection code
+$(".size").click(function () {
+  $(".size").each(function () {
+    $(this).removeClass("size-selected");
+  });
+  $(this).addClass("size-selected");
+  // Displaying the size selected info by the select size
+  document.getElementById("select-size").innerHTML = document.querySelector(
+    ".size-selected"
+  ).innerHTML;
+});
 
 // Decrease Quantity function
 function decreaseQuantity() {
@@ -68,11 +79,3 @@ function calculateTotalPrice() {
 function calculateCartSubTotal() {
   cartSubtotalPrice.innerHTML = quantity.value * originalPrice.innerText;
 }
-
-$(".size").click(function () {
-  
-  $(".size").each(function () {
-    $(this).removeClass("size-selected");
-  });
-  $(this).addClass("size-selected");
-});
