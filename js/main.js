@@ -64,8 +64,8 @@ function updatePrice() {
 
 // Quantity update function
 function updateQuantity() {
-  qty.innerHTML = quantity.value;
-  qty = qty.innerHTML;
+  qty.innerText = quantity.value;
+  qty = qty.innerText;
   return qty;
 }
 

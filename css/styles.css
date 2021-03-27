@@ -506,6 +506,7 @@ a.checkout {
   text-align: center;
   border: 1px solid gray;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
